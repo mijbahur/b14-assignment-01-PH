@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Development Conference 2026</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" type="image/x-icon" href="./images/logo-mini.png" />
 
         <!-- font style -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,13 +26,14 @@
     </head>
     <body>
         <nav>
-            <img src="./images/logo.png" alt="page-logo" />
+            <a href=""><img src="./images/logo.png" alt="page-logo" /></a>
             <ul class="nav-center">
                 <li><a href="#speaker">Speaker</a></li>
                 <li><a href="#">Schedule</a></li>
                 <li><a href="#">Tracks</a></li>
-                <li><a href="#">Venue</a></li>
+                <li><a href="#vanue">Venue</a></li>
                 <li><a href="#">Blog</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
             <button class="common-btn">Register Now</button>
         </nav>
@@ -50,7 +52,7 @@
         <main>
             <!-- speaker section start -->
             <section class="container speakers-section" id="speaker">
-                <h2>Meet the Speakers</h2>
+                <h2 class="section-heading">Meet the Speakers</h2>
                 <div class="speaker-conatiner">
                     <div class="speaker-card">
                         <img
@@ -58,7 +60,7 @@
                             alt="picture of Andrej Karpathy"
                         />
                         <div class="card-content">
-                            <p class="category">AI/ML</p>
+                            <p class="blue-text">AI/ML</p>
                             <h4 class="speaker-name">Andrej Karpathy</h4>
                             <p class="common-text">
                                 Pretraining team, Anthropic
@@ -68,7 +70,7 @@
                     <div class="speaker-card">
                         <img src="./images/demis.png" alt="picture of Demis" />
                         <div class="card-content">
-                            <p class="category">Cloud & DevOps</p>
+                            <p class="blue-text">Cloud & DevOps</p>
                             <h4 class="speaker-name">Demis Hassabis</h4>
                             <p class="common-text">
                                 Co-Founder and CEO, Google DeepMind
@@ -81,7 +83,7 @@
                             alt="picture of Gary Marcus"
                         />
                         <div class="card-content">
-                            <p class="category">Frontend</p>
+                            <p class="blue-text">Frontend</p>
                             <h4 class="speaker-name">Gary Marcus</h4>
                             <p class="common-text">Staff Engineer, Vercel</p>
                         </div>
@@ -92,7 +94,7 @@
                             alt="picture of Mustafa Suleyman"
                         />
                         <div class="card-content">
-                            <p class="category">Security</p>
+                            <p class="blue-text">Security</p>
                             <h4 class="speaker-name">Mustafa Suleyman</h4>
                             <p class="common-text">CEO of Microsoft AI</p>
                         </div>
@@ -103,7 +105,7 @@
 
             <!-- pricing section start -->
             <section class="container pricing">
-                <div class="section-heading">
+                <div class="section-heading-with-desc">
                     <h3>Secure Your Spot</h3>
                     <p class="common-text">
                         Early-bird pricing ends August 15, 2026.
@@ -178,6 +180,79 @@
             </section>
             <!-- speaker section end -->
 
+            <!-- vanue section start -->
+            <section class="container venue-section" id="vanue">
+                <h2 class="section-heading">Venue</h2>
+                <div class="venue-container">
+                    <img
+                        src="./images/moscone-west.jpg"
+                        alt="Conference venue exterior"
+                    />
+                    <div class="venue-details">
+                        <h4>Moscone Center West</h4>
+                        <p class="blue-text venue-address">
+                            747 Howard St, San Francisco, CA 94103
+                        </p>
+                        <p class="venue-desc">
+                            Located in the heart of downtown San Francisco,
+                            minutes from major hotels, restaurants, and public
+                            transit - everything you need within walking
+                            distance.
+                        </p>
+                        <a href="#" class="common-btn venue-btn">
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+            </section>            
+            <!-- vanue section end -->
+
+            
+            <!-- FAQ section star -->
+            <section class="container faq-section" id="faq">
+                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <details class="faq-item">
+                        <summary>What's included in my ticket?</summary>
+                        <p>
+                            Your ticket includes access to all keynote and
+                            breakout sessions, workshops based on your tier,
+                            meals during conference hours, and a digital swag
+                            bag.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            Is this event in-person, virtual, or hybrid?
+                        </summary>
+                        <p>
+                            DevConf 2026 is a fully in-person event at Moscone
+                            Center West. Recordings of select sessions will be
+                            made available afterward for Pro and Team ticket
+                            holders.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I get a refund if I can't attend?</summary>
+                        <p>
+                            Full refunds are available up to 30 days before the
+                            event. After that, tickets are transferable to
+                            another attendee but non-refundable.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>
+                            Do you offer student or group discounts?
+                        </summary>
+                        <p>
+                            Yes - students can apply for a discounted rate with
+                            a valid .edu email, and groups of 5+ receive a 15%
+                            discount on Standard and Pro tickets.
+                        </p>
+                    </details>
+                </div>
+            </section>
+            <!-- FAQ section end -->
             <section></section>
         </main>
 

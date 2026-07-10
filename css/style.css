@@ -30,12 +30,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: auto 8%; */
+    box-sizing: border-box;
     height: 60px;
-    padding: 15px 8%;
+    padding: 35px 8%;
     position: fixed;
     top: 0;
-    width: 84%;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 24px rgba(32, 92, 255, 0.15);
     z-index: 1000;
@@ -117,7 +119,7 @@ main {
 }
 
 /* -------------speaker section start------------- */
-.speakers-section h2 {
+.section-heading {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 40px;
@@ -154,7 +156,7 @@ main {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.category {
+.blue-text {
     color: #2563eb;
     font-size: 0.75rem;
     font-weight: 600;
@@ -172,12 +174,12 @@ main {
 
 /* -------------pricing card start------------- */
 
-.section-heading h3 {
+.section-heading-with-desc h3 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 8px;
 }
-.section-heading p {
+.section-heading-with-desc p {
     text-align: center;
 }
 
@@ -260,6 +262,97 @@ main {
 }
 
 /* -------------pricing card end------------- */
+
+/* -------------venue start------------- */
+
+.venue-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.venue-container img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.venue-details h4 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.venue-address {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.venue-desc {
+    color: #575757;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.venue-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 32px;
+}
+
+/* -------------venue end------------- */
+
+/* -------------faq start------------- */
+
+.faq-container {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 18px 24px;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-item:hover {
+    border-color: #1d4ed8;
+    background-color: #f8faff;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: #1d4ed8;
+    transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq-item p {
+    color: #575757;
+    line-height: 1.6;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #e5e5e5;
+}
+/* -------------faq end------------- */
 
 /* -------------footer start------------- */
 footer {
