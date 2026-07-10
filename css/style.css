@@ -74,7 +74,9 @@ header {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 110px 20px 80px;
     align-items: center;
     text-align: center;
     gap: 260px;
@@ -101,7 +103,6 @@ header {
 
 .banner-reg-btn {
     font-size: 24px;
-    /* margin-top: 360px; */
 }
 
 /* -------------header end------------- */
@@ -110,12 +111,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    margin-bottom: 80px;
 }
 
 .container {
     /* margin: 0 8%; */
     max-width: 1300px;
     margin: auto;
+    padding: 0 8%;
 }
 
 /* -------------speaker section start------------- */
@@ -124,16 +127,13 @@ main {
     font-size: 3rem;
     margin-bottom: 40px;
 }
-.speaker-conatiner {
+.speaker-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-.speaker-card img {
-    width: 100%;
-}
 
-.speaker-card {
+.card {
     border: 1px solid #e5e5e5;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 
@@ -143,17 +143,21 @@ main {
     border-radius: 12px;
     overflow: hidden;
 }
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-card img {
+    width: 100%;
+}
+
 
 .card-content {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 11px;
-}
-
-.speaker-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .blue-text {
@@ -166,7 +170,7 @@ main {
     font-weight: bold;
 }
 
-.common-text {
+.description {
     color: #575757;
     font-size: 0.875rem;
 }
@@ -214,7 +218,7 @@ main {
 .plan-name,
 .price-label {
     font-size: 0.8125rem;
-    font-weight: 600px;
+    font-weight: 600;
     color: #888888;
 }
 .plan-price {
@@ -318,6 +322,7 @@ main {
     border: 1px solid #e5e5e5;
     border-radius: 12px;
     padding: 18px 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .faq-item summary {
@@ -414,9 +419,9 @@ footer {
 .footer-term a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
+    transition: color 0.2s ease;
 }
 .footer-term a:hover {
     color: #fff;
-    transition: color 0.1s ease 0.1s;
 }
 /* -------------footer end------------- */
