@@ -12,7 +12,7 @@
     border: none;
     font-weight: bold;
     cursor: pointer;
-    padding: 15px 65px;
+    padding: 14px 63px;
     transition:
         background-color 0.2s ease,
         transform 0.15s ease,
@@ -20,7 +20,9 @@
     flex-shrink: 0;
 }
 .common-btn:hover {
-    background-color: #1e40af;
+    color: #1d4ed8;
+    background-color: #fff;
+    border: 1px solid #2563eb;
     transform: translateY(-2px);
     box-shadow: 0 6px 14px rgba(29, 78, 216, 0.35);
 }
@@ -76,10 +78,9 @@ header {
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    padding: 110px 20px 80px;
+    padding: 130px 20px 100px;
     align-items: center;
     text-align: center;
-    gap: 260px;
     margin-top: 60px;
     margin-bottom: 100px;
 }
@@ -110,15 +111,13 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 110px;
     margin-bottom: 80px;
 }
 
 .container {
-    /* margin: 0 8%; */
+    margin: 0 8%;
     max-width: 1300px;
-    margin: auto;
-    padding: 0 8%;
 }
 
 /* -------------speaker section start------------- */
@@ -151,7 +150,6 @@ main {
 .speaker-card img {
     width: 100%;
 }
-
 
 .card-content {
     padding: 20px;
@@ -191,6 +189,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 0 13%;
 }
 .pricing-cards {
     display: grid;
